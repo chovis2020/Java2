@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lan.java2.Ingresar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/main.ll.margin"
+        android:background="@drawable/shape_fondo"
+        android:elevation="@dimen/main.ll.elevation"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/detalle.iv.width.height"
+            android:layout_height="@dimen/detalle.iv.width.height"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/persona" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/detalle.et.margin"
+            android:gravity="center"
+            android:textSize="@dimen/detalle.et.nombre.textsize" />
+
+        <TextView
+            android:id="@+id/tvApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/detalle.et.nombre.textsize" />
+
+        <TextView
+            android:id="@+id/tvUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/detalle.et.margin"
+            android:gravity="center"
+            android:textSize="@dimen/detalle.et.usuario.textsize" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/main.btn.marginright"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="@dimen/main.btn.paddingleft"
+            android:paddingRight="@dimen/main.btn.paddingright"
+            android:text="@string/detalle.btn.volver"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/main.btn.textsize" />
+    </LinearLayout>
+</LinearLayout>
